@@ -2,7 +2,7 @@
 
 class CnfsBackend::Repository < Repository
   store :config, accessors: %i[namespace service_type test_framework ruby_version], coder: YAML
-  store :dockerfile, accessors: %i[static_gems image image_base bundle_home gem_home repo_name repo_path upstream_repo_name upstream_repo_path], coder: YAML
+  store :dockerfile, accessors: %i[static_gems image image_base bundle_home gem_home repo_name upstream_repo_name upstream_repo_path], coder: YAML
   store :build, accessors: %i[with_source with_upstream_source]
 
   # serialize :static_gems, Array
