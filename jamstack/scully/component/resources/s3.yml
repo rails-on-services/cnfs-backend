@@ -1,0 +1,4 @@
+---
+type: Aws::Resource::S3::Bucket
+config:
+  size: 12
